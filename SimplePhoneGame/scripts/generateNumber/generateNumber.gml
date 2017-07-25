@@ -1,5 +1,5 @@
 /// @function generateNumber(boardNumber)
-/// @param {real} boardNumber The board it will generate the number for.
+/// @param {real} boardNumber The board it will generate the number for.	
 
 var boardNumber = argument0;
 
