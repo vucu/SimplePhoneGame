@@ -1,5 +1,7 @@
 /// @description Game over
 isLost = true;
 
-// Now just reset the game
 instance_destroy(objBoardController);
+
+// Reset after sometimes
+alarm[0]=30;
