@@ -1,3 +1,1 @@
-// Game state
-score = 0;
-isLost = false;
+event_perform(ev_other,ev_user1);
