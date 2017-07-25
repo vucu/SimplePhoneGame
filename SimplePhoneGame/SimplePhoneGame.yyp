@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "10a64782-b543-42b8-bc3a-fe6221400c04",
+            "Value": {
+                "id": "917d82af-d908-4286-99e3-3eceb85d8832",
+                "resourcePath": "rooms\\rmParent\\rmParent.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1482901a-5c88-42f2-826c-6b0005c4764c",
             "Value": {
                 "id": "09f00932-0b69-4b96-99e7-2ed4069c5e02",
@@ -79,6 +87,30 @@
             }
         },
         {
+            "Key": "4a2fee48-52fc-4814-b75c-21a07d16076b",
+            "Value": {
+                "id": "72011b05-9b83-4c73-822f-fe27d95d148d",
+                "resourcePath": "objects\\objBoardController\\objBoardController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "615b6330-9a3c-499b-8945-0055f954e4e6",
+            "Value": {
+                "id": "92c4a970-6b1f-4275-a2be-00f588c35117",
+                "resourcePath": "scripts\\rowToBeCleared\\rowToBeCleared.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "68aac8e0-3d41-4f0b-8cb9-495601556cb0",
+            "Value": {
+                "id": "28861076-993d-4ca3-9c98-4c9d1b9e720f",
+                "resourcePath": "sprites\\sprSquare\\sprSquare.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "c42befb8-954a-4f72-8cec-51892ef79c8d",
@@ -95,11 +127,11 @@
             }
         },
         {
-            "Key": "7fe82a48-7b4d-408d-8e41-e56ce26bfd89",
+            "Key": "7d0034b6-7bce-4d40-92cc-86a983185633",
             "Value": {
-                "id": "468748aa-1f67-483c-91aa-c91233e53bcb",
-                "resourcePath": "rooms\\room0\\room0.yy",
-                "resourceType": "GMRoom"
+                "id": "df3fa4df-101b-4b4a-8040-1e98bc5187be",
+                "resourcePath": "views\\7d0034b6-7bce-4d40-92cc-86a983185633.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -119,11 +151,27 @@
             }
         },
         {
+            "Key": "9739507e-1af3-4f61-a669-1c892d287c9b",
+            "Value": {
+                "id": "22ea04e8-e387-4df8-bc3c-4510bac57a0c",
+                "resourcePath": "objects\\objNumberBlock\\objNumberBlock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9b321d93-03e1-4f4e-83d2-a2c135f80494",
             "Value": {
                 "id": "0318238c-e9f6-469a-880d-67653b3d29fa",
                 "resourcePath": "views\\9b321d93-03e1-4f4e-83d2-a2c135f80494.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9e673a16-38c2-46fa-8cf8-76da7fd2b994",
+            "Value": {
+                "id": "e6f94732-9b8e-47a0-b490-4043fb62c96b",
+                "resourcePath": "rooms\\rmGame\\rmGame.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -140,6 +188,14 @@
                 "id": "0b34d538-c880-47bc-85b6-ae356f8d0964",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ad566db0-eff4-4751-91a1-f42d1bee44d9",
+            "Value": {
+                "id": "85ecebf7-426c-4131-926c-b668d6bcfdfe",
+                "resourcePath": "scripts\\getTotalValueAtRow\\getTotalValueAtRow.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -191,6 +247,30 @@
             }
         },
         {
+            "Key": "d86cb6c9-aae4-4efc-8712-785f92a4c1f6",
+            "Value": {
+                "id": "797a124b-372a-43c4-a448-fe57e496c2db",
+                "resourcePath": "views\\10a64782-b543-42b8-bc3a-fe6221400c04-room.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "da357d35-4755-46d2-b4b1-7c40d138260e",
+            "Value": {
+                "id": "dabe2983-30da-4e5b-acf2-7ca84008d575",
+                "resourcePath": "scripts\\shouldBlockStickToBoard\\shouldBlockStickToBoard.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dfda9509-1fa7-4aca-9737-29d7f9e697e2",
+            "Value": {
+                "id": "3f633464-5050-443f-bf8b-00a13ddb01b7",
+                "resourcePath": "objects\\objGameController\\objGameController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "44d82e21-dd6f-4ada-8387-9c51f229fdfd",
@@ -213,10 +293,21 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "fd89ea74-5648-4ae6-9cb3-3148a70d4dc9",
+            "Value": {
+                "id": "bedbbba5-0c74-4bf5-8085-e1a6a24d51fa",
+                "resourcePath": "scripts\\deleteRow\\deleteRow.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
-        
+        "da357d35-4755-46d2-b4b1-7c40d138260e",
+        "615b6330-9a3c-499b-8945-0055f954e4e6",
+        "ad566db0-eff4-4751-91a1-f42d1bee44d9",
+        "fd89ea74-5648-4ae6-9cb3-3148a70d4dc9"
     ],
     "tutorial": ""
 }
