@@ -66,9 +66,9 @@ if (!isStick) {
 		
 		currentBlockX = 1;
 		currentBlockY = 0;
-		var coin = random(1);
-		if (coin<0.5) currentBlockNumber = bestNumber(boardA,boardB,boardC,9);
-		else currentBlockNumber=irandom_range(0,9);
+	
+		currentBlockNumber = bestNumber(boardA,boardB,boardC,9);
+		if (currentBlockNumber<0) currentBlockNumber = irandom_range(0,9);
 		currentBlockWidth = 1;
 		
 		// Switch to next board

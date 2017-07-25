@@ -20,7 +20,7 @@ for (i=h-1;i>=0;i--) {
 }
 selectedRow = i;
 
-// Check for trivial case: only one blank
+// Solve
 var puzzle = [];
 puzzle[0] = boardA[selectedRow,0];
 puzzle[1] = boardA[selectedRow,1];
@@ -28,9 +28,37 @@ puzzle[2] = boardB[selectedRow,0];
 puzzle[3] = boardB[selectedRow,1];
 puzzle[4] = boardC[selectedRow,0];
 puzzle[5] = boardC[selectedRow,1];
-var pos = exhaustiveSolveAssignablePosition(puzzle);
-if (exhaustiveSolve(puzzle,limit)) {
-	return puzzle[pos];
+var pos = exhaustiveSolveAssignablePosition(puzzle,6);
+if (pos>=0 && exhaustiveSolve(puzzle,6,limit)) {
+	var v = puzzle[pos];
+	
+	// If v=0, meaning there's too many solution. Solver is useless
+	if (v>0) return v;
+}
+
+// Solve for digit-by-digit as well
+var puzzle = [];
+puzzle[0] = boardA[selectedRow,0];
+puzzle[1] = boardB[selectedRow,0];
+puzzle[2] = boardC[selectedRow,0];
+var pos = exhaustiveSolveAssignablePosition(puzzle,3);
+if (pos>=0 && exhaustiveSolve(puzzle,3,limit)) {
+	var v = puzzle[pos];
+	
+	// If v=0, meaning there's too many solution. Solver is useless
+	if (v>0) return v;
+}
+
+var puzzle = [];
+puzzle[0] = boardA[selectedRow,1];
+puzzle[1] = boardB[selectedRow,1];
+puzzle[2] = boardC[selectedRow,1];
+var pos = exhaustiveSolveAssignablePosition(puzzle,3);
+if (pos>=0 && exhaustiveSolve(puzzle,3,limit)) {
+	var v = puzzle[pos];
+	
+	// If v=0, meaning there's too many solution. Solver is useless
+	if (v>0) return v;
 }
 
 return -1;
