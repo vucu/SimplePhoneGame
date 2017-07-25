@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "59fda1a5-a5b2-4d44-b456-030aba52f3a1",
+            "Value": {
+                "id": "21b34fba-bc28-4568-b4ef-912df3887030",
+                "resourcePath": "fonts\\fontUI\\fontUI.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "615b6330-9a3c-499b-8945-0055f954e4e6",
             "Value": {
                 "id": "92c4a970-6b1f-4275-a2be-00f588c35117",

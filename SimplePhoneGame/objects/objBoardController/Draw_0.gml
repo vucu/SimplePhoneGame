@@ -122,6 +122,8 @@ for (i=0;i<currentBlockWidth;i++) {
 }
 
 // Draw the current score (debug)
-var xx = G_XSTART + totalDistance;
+var xx = G_XSTART;
 var yy = G_YSTART + (boardHeight+0.5)*G_BLOCK_SIZE;
-draw_text(xx, yy, string(score));
+draw_set_font(fontUI);
+draw_set_halign(fa_left);
+draw_text(xx, yy, "Score: "+string(score));
