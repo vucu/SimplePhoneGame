@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "062a369c-3c79-4c48-becf-532b80557c2e",
+            "Value": {
+                "id": "e9d22131-be92-44a2-badc-78ca5381a374",
+                "resourcePath": "scripts\\generateNumber\\generateNumber.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "10a64782-b543-42b8-bc3a-fe6221400c04",
             "Value": {
                 "id": "917d82af-d908-4286-99e3-3eceb85d8832",
@@ -159,19 +167,19 @@
             }
         },
         {
-            "Key": "9739507e-1af3-4f61-a669-1c892d287c9b",
-            "Value": {
-                "id": "22ea04e8-e387-4df8-bc3c-4510bac57a0c",
-                "resourcePath": "objects\\objNumberBlock\\objNumberBlock.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "9b321d93-03e1-4f4e-83d2-a2c135f80494",
             "Value": {
                 "id": "0318238c-e9f6-469a-880d-67653b3d29fa",
                 "resourcePath": "views\\9b321d93-03e1-4f4e-83d2-a2c135f80494.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9cea9d23-2ead-44a3-8ea6-36d89034deb9",
+            "Value": {
+                "id": "54876aaf-52a7-403a-8c98-7c63dcc4d91d",
+                "resourcePath": "scripts\\emptyBoard\\emptyBoard.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -293,22 +301,15 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
-        },
-        {
-            "Key": "fd89ea74-5648-4ae6-9cb3-3148a70d4dc9",
-            "Value": {
-                "id": "bedbbba5-0c74-4bf5-8085-e1a6a24d51fa",
-                "resourcePath": "scripts\\deleteRow\\deleteRow.yy",
-                "resourceType": "GMScript"
-            }
         }
     ],
     "script_order": [
         "da357d35-4755-46d2-b4b1-7c40d138260e",
         "615b6330-9a3c-499b-8945-0055f954e4e6",
         "ad566db0-eff4-4751-91a1-f42d1bee44d9",
-        "fd89ea74-5648-4ae6-9cb3-3148a70d4dc9",
-        "6a33b7d6-40a0-47d6-9928-f1dd2c4bf389"
+        "6a33b7d6-40a0-47d6-9928-f1dd2c4bf389",
+        "9cea9d23-2ead-44a3-8ea6-36d89034deb9",
+        "062a369c-3c79-4c48-becf-532b80557c2e"
     ],
     "tutorial": ""
 }

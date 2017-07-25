@@ -1,8 +1,8 @@
 {
-    "id": "fd89ea74-5648-4ae6-9cb3-3148a70d4dc9",
+    "id": "9cea9d23-2ead-44a3-8ea6-36d89034deb9",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "deleteRow",
+    "name": "emptyBoard",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -8,6 +8,5 @@ var row = argument1;
 
 if (boardC[row,0]<0) return -1;
 if (boardC[row,1]<0) return -1;
-if (boardC[row,2]<0) return -1;
 
-return boardC[row,0]*100 + boardC[row,1]*10 + boardC[row,2];
+return boardC[row,0]*10 + boardC[row,1];

@@ -1,6 +1,6 @@
 /// @description Draw the boards to screen
 
-var totalDistance = 3*G_BLOCK_SIZE+G_DISTANCE_BETWEEN_BOARDS;
+var totalDistance = 2*G_BLOCK_SIZE+G_DISTANCE_BETWEEN_BOARDS;
 
 // Draw boards outline
 var len = G_BLOCK_SIZE*boardHeight;
@@ -18,14 +18,14 @@ for (i=0;i<3;i++) {
 		c_black);
 	draw_line_width_color(xx,
 		yy+len,
-		xx+3*G_BLOCK_SIZE,
+		xx+2*G_BLOCK_SIZE,
 		yy+len,
 		w,
 		c_black,
 		c_black);	
-	draw_line_width_color(xx+3*G_BLOCK_SIZE,
+	draw_line_width_color(xx+2*G_BLOCK_SIZE,
 		yy,
-		xx+3*G_BLOCK_SIZE,
+		xx+2*G_BLOCK_SIZE,
 		yy+len,
 		w,
 		c_black,
@@ -36,7 +36,7 @@ for (i=0;i<3;i++) {
 }
 
 // Draw the plus sign
-var xcenter = G_XSTART + 3*G_BLOCK_SIZE + G_DISTANCE_BETWEEN_BOARDS/2;
+var xcenter = G_XSTART + 2*G_BLOCK_SIZE + G_DISTANCE_BETWEEN_BOARDS/2;
 var ycenter = G_YSTART + boardHeight*G_BLOCK_SIZE/2;
 var size = G_DISTANCE_BETWEEN_BOARDS/4;
 var w = 4;
@@ -56,7 +56,7 @@ draw_line_width_color(xcenter,
 	c_black);
 	
 // Draw the equal sign
-var xcenter = G_XSTART + 6*G_BLOCK_SIZE + G_DISTANCE_BETWEEN_BOARDS*1.5;
+var xcenter = G_XSTART + 4*G_BLOCK_SIZE + G_DISTANCE_BETWEEN_BOARDS*1.5;
 var ycenter = G_YSTART + boardHeight*G_BLOCK_SIZE/2;
 var len = G_DISTANCE_BETWEEN_BOARDS/4;
 var height = G_DISTANCE_BETWEEN_BOARDS/8
@@ -86,7 +86,7 @@ for (r=0;r<boardHeight;r++) {
 	var yy = G_YSTART + r*G_BLOCK_SIZE;
 	
 	var i;
-	for (i=0;i<3;i++) {
+	for (i=0;i<2;i++) {
 		if (boardA[r,i]>=0) {
 			draw_sprite(sprSquare,0,xx,yy);
 			draw_text(xx+G_BLOCK_SIZE/2,

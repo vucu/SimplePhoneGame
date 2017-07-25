@@ -14,17 +14,14 @@ var i;
 for (i=0;i<h;i++) {
 	if (boardA[i,0]<0) continue;
 	if (boardA[i,1]<0) continue;
-	if (boardA[i,2]<0) continue;
 	if (boardB[i,0]<0) continue;
 	if (boardB[i,1]<0) continue;
-	if (boardB[i,2]<0) continue;
 	if (boardC[i,0]<0) continue;
 	if (boardC[i,1]<0) continue;
-	if (boardC[i,2]<0) continue;
 	
-	var a = boardA[i,0]*100 + boardA[i,1]*10 + boardA[i,2];
-	var b = boardB[i,0]*100 + boardB[i,1]*10 + boardB[i,2];
-	var c = boardC[i,0]*100 + boardC[i,1]*10 + boardC[i,2];
+	var a = boardA[i,0]*10 + boardA[i,1];
+	var b = boardB[i,0]*10 + boardB[i,1];
+	var c = boardC[i,0]*10 + boardC[i,1];
 	if (a+b==c) {
 		return i;
 	}
