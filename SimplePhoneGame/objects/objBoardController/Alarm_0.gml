@@ -44,12 +44,14 @@ if (!isStick) {
 		if (score==0) {
 			currentBlockX = 0;
 			currentBlockY = 0;
-			currentBlockNumber = 1;
+			if (currentBoardNumber==1) currentBlockNumber = 2;
+			else currentBlockNumber = 1;
 			currentBlockWidth = 3;
 		} else if (score==222) {
 			currentBlockX = 1;
 			currentBlockY = 0;
-			currentBlockNumber = 1;
+			if (currentBoardNumber==1) currentBlockNumber = 2;
+			else currentBlockNumber = 1;
 			currentBlockWidth = 1;
 		} else {
 			currentBlockX = 1;

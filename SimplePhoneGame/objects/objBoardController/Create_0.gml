@@ -2,10 +2,10 @@
 G_XSTART = 50;
 G_YSTART = 50;
 G_BLOCK_SIZE = 40;
-G_DISTANCE_BETWEEN_BOARDS = 50;
+G_DISTANCE_BETWEEN_BOARDS = 70;
 
 // properties
-timeBetweenFalls = 60;
+timeBetweenFalls = 30;
 boardHeight = 9;
 
 // state variables

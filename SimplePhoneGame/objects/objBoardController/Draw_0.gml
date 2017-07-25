@@ -35,7 +35,48 @@ for (i=0;i<3;i++) {
 	xx+=totalDistance;
 }
 
-// Draw numbers occupied on boards
+// Draw the plus sign
+var xcenter = G_XSTART + 3*G_BLOCK_SIZE + G_DISTANCE_BETWEEN_BOARDS/2;
+var ycenter = G_YSTART + boardHeight*G_BLOCK_SIZE/2;
+var size = G_DISTANCE_BETWEEN_BOARDS/4;
+var w = 4;
+draw_line_width_color(xcenter-size,
+	ycenter,
+	xcenter+size,
+	ycenter,
+	w,
+	c_black,
+	c_black);
+draw_line_width_color(xcenter,
+	ycenter-size,
+	xcenter,
+	ycenter+size,
+	w,
+	c_black,
+	c_black);
+	
+// Draw the equal sign
+var xcenter = G_XSTART + 6*G_BLOCK_SIZE + G_DISTANCE_BETWEEN_BOARDS*1.5;
+var ycenter = G_YSTART + boardHeight*G_BLOCK_SIZE/2;
+var len = G_DISTANCE_BETWEEN_BOARDS/4;
+var height = G_DISTANCE_BETWEEN_BOARDS/8
+var w = 4;
+draw_line_width_color(xcenter-len,
+	ycenter-height,
+	xcenter+len,
+	ycenter-height,
+	w,
+	c_black,
+	c_black);
+draw_line_width_color(xcenter-len,
+	ycenter+height,
+	xcenter+len,
+	ycenter+height,
+	w,
+	c_black,
+	c_black);
+
+// Draw the numbers occupied on boards
 var r;
 for (r=0;r<boardHeight;r++) {
 	draw_set_halign(fa_center);
@@ -46,19 +87,19 @@ for (r=0;r<boardHeight;r++) {
 	
 	var i;
 	for (i=0;i<3;i++) {
-		if (boardA[r,i]>0) {
+		if (boardA[r,i]>=0) {
 			draw_sprite(sprSquare,0,xx,yy);
 			draw_text(xx+G_BLOCK_SIZE/2,
 				yy+G_BLOCK_SIZE/2,
 				string(boardA[r,i]));
 		}
-		if (boardB[r,i]>0) {
+		if (boardB[r,i]>=0) {
 			draw_sprite(sprSquare,0,xx+totalDistance,yy);
 			draw_text(xx+G_BLOCK_SIZE/2+totalDistance,
 				yy+G_BLOCK_SIZE/2,
 				string(boardB[r,i]));
 		}
-		if (boardC[r,i]>0) {
+		if (boardC[r,i]>=0) {
 			draw_sprite(sprSquare,0,xx+2*totalDistance,yy);
 			draw_text(xx+G_BLOCK_SIZE/2+2*totalDistance,
 				yy+G_BLOCK_SIZE/2,

@@ -25,7 +25,9 @@ for (i=0;i<h;i++) {
 	var a = boardA[i,0]*100 + boardA[i,1]*10 + boardA[i,2];
 	var b = boardB[i,0]*100 + boardB[i,1]*10 + boardB[i,2];
 	var c = boardC[i,0]*100 + boardC[i,1]*10 + boardC[i,2];
-	if (a+b==c) return i;
+	if (a+b==c) {
+		return i;
+	}
 }
 
 return -1;
