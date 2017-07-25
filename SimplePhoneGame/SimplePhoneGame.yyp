@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "4e955621-2a6f-4b95-b59d-906bc196fa09",
+            "Value": {
+                "id": "fff60635-9f75-4dac-9e5b-73e43564bcc5",
+                "resourcePath": "fonts\\fontNumber\\fontNumber.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "615b6330-9a3c-499b-8945-0055f954e4e6",
             "Value": {
                 "id": "92c4a970-6b1f-4275-a2be-00f588c35117",
@@ -207,11 +215,27 @@
             }
         },
         {
+            "Key": "ad9560d6-a842-4bbd-87db-66f8348317ca",
+            "Value": {
+                "id": "4d88cf42-6b34-4e00-ab3f-57b7e3bdf62d",
+                "resourcePath": "fonts\\fontTitle\\fontTitle.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "b822bd9f-cac8-4560-8ee4-49b5fbe6848c",
             "Value": {
                 "id": "db572f64-d233-44c3-990b-a4655f888f39",
                 "resourcePath": "views\\b822bd9f-cac8-4560-8ee4-49b5fbe6848c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b94f6367-bce9-4a38-81c3-5511e14fe57a",
+            "Value": {
+                "id": "141cc96a-584a-41c5-b984-39567d3ce03a",
+                "resourcePath": "scripts\\canMove\\canMove.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -309,6 +333,7 @@
         "ad566db0-eff4-4751-91a1-f42d1bee44d9",
         "6a33b7d6-40a0-47d6-9928-f1dd2c4bf389",
         "9cea9d23-2ead-44a3-8ea6-36d89034deb9",
+        "b94f6367-bce9-4a38-81c3-5511e14fe57a",
         "062a369c-3c79-4c48-becf-532b80557c2e"
     ],
     "tutorial": ""

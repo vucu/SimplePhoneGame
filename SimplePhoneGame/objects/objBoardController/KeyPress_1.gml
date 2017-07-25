@@ -1,9 +1,5 @@
-if (!canTap) return;
-
-if (currentBlockWidth==1) {
-	currentBlockX = (currentBlockX+1) % 2;
-} 
-
-// Note: Prohibit tap for a small amount of time, to reduce sensitivity
-canTap = false;
-alarm[1] = 6;
+if (keyboard_lastkey==vk_down) {
+	event_perform(ev_other,ev_user1);
+} else {
+	event_perform(ev_other,ev_user0);
+}

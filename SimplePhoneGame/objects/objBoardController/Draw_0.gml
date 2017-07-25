@@ -7,7 +7,7 @@ var len = G_BLOCK_SIZE*boardHeight;
 var xx = G_XSTART;
 var yy = G_YSTART;
 var i;
-var w = 2;
+var w = 4;
 for (i=0;i<3;i++) {
 	draw_line_width_color(xx,
 		yy,
@@ -39,7 +39,7 @@ for (i=0;i<3;i++) {
 var xcenter = G_XSTART + 2*G_BLOCK_SIZE + G_DISTANCE_BETWEEN_BOARDS/2;
 var ycenter = G_YSTART + boardHeight*G_BLOCK_SIZE/2;
 var size = G_DISTANCE_BETWEEN_BOARDS/4;
-var w = 4;
+var w = 8;
 draw_line_width_color(xcenter-size,
 	ycenter,
 	xcenter+size,
@@ -60,7 +60,7 @@ var xcenter = G_XSTART + 4*G_BLOCK_SIZE + G_DISTANCE_BETWEEN_BOARDS*1.5;
 var ycenter = G_YSTART + boardHeight*G_BLOCK_SIZE/2;
 var len = G_DISTANCE_BETWEEN_BOARDS/4;
 var height = G_DISTANCE_BETWEEN_BOARDS/8
-var w = 4;
+var w = 8;
 draw_line_width_color(xcenter-len,
 	ycenter-height,
 	xcenter+len,
@@ -82,6 +82,7 @@ for (r=0;r<boardHeight;r++) {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_set_color(c_black);
+	draw_set_font(fontNumber);
 	var xx = G_XSTART;
 	var yy = G_YSTART + r*G_BLOCK_SIZE;
 	
@@ -122,5 +123,5 @@ for (i=0;i<currentBlockWidth;i++) {
 
 // Draw the current score (debug)
 var xx = G_XSTART + totalDistance;
-var yy = G_YSTART + (boardHeight+1)*G_BLOCK_SIZE;
+var yy = G_YSTART + (boardHeight+0.5)*G_BLOCK_SIZE;
 draw_text(xx, yy, string(score));

@@ -1,12 +1,12 @@
 // Graphic constants
 G_XSTART = 50;
 G_YSTART = 50;
-G_BLOCK_SIZE = 40;
-G_DISTANCE_BETWEEN_BOARDS = 70;
+G_BLOCK_SIZE = 64;
+G_DISTANCE_BETWEEN_BOARDS = 80;
 
 // properties
 timeBetweenFalls = 60;
-boardHeight = 9;
+boardHeight = 8;
 
 // state variables
 canTap = true;
