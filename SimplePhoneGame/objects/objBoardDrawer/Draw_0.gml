@@ -1,7 +1,8 @@
 /// @description Draw the boards to screen
 
 var totalDistance = 2*G_BLOCK_SIZE+G_DISTANCE_BETWEEN_BOARDS;
-
+var colorGold = make_color_rgb(255,207,63);
+		
 // Draw boards outline
 var len = G_BLOCK_SIZE*boardHeight;
 var xx = G_XSTART;
@@ -86,25 +87,44 @@ for (r=0;r<boardHeight;r++) {
 	var xx = G_XSTART;
 	var yy = G_YSTART + r*G_BLOCK_SIZE;
 	
+	// If this is a highlight row, make it a different color
+	if (r==highlightedRow) {
+		var textColor = c_black;
+		var squareColor = colorGold;
+	} else {
+		var textColor = c_black;
+		var squareColor = c_white;
+	}
+	
+	// Draw
 	var i;
 	for (i=0;i<2;i++) {
 		if (boardA[r,i]>=0) {
-			draw_sprite(sprSquare,0,xx,yy);
-			draw_text(xx+G_BLOCK_SIZE/2,
+			draw_sprite_ext(sprSquare,
+				0,xx,yy,1,1,0,squareColor,1);
+			draw_text_color(xx+G_BLOCK_SIZE/2,
 				yy+G_BLOCK_SIZE/2,
-				string(boardA[r,i]));
+				string(boardA[r,i]),
+				textColor,textColor,
+				textColor,textColor,1);
 		}
 		if (boardB[r,i]>=0) {
-			draw_sprite(sprSquare,0,xx+totalDistance,yy);
-			draw_text(xx+G_BLOCK_SIZE/2+totalDistance,
+			draw_sprite_ext(sprSquare,
+				0,xx+totalDistance,yy,1,1,0,squareColor,1);
+			draw_text_color(xx+G_BLOCK_SIZE/2+totalDistance,
 				yy+G_BLOCK_SIZE/2,
-				string(boardB[r,i]));
+				string(boardB[r,i]),
+				textColor,textColor,
+				textColor,textColor,1);
 		}
 		if (boardC[r,i]>=0) {
-			draw_sprite(sprSquare,0,xx+2*totalDistance,yy);
-			draw_text(xx+G_BLOCK_SIZE/2+2*totalDistance,
+			draw_sprite_ext(sprSquare,
+				0,xx+2*totalDistance,yy,1,1,0,squareColor,1);
+			draw_text_color(xx+G_BLOCK_SIZE/2+2*totalDistance,
 				yy+G_BLOCK_SIZE/2,
-				string(boardC[r,i]));
+				string(boardC[r,i]),
+				textColor,textColor,
+				textColor,textColor,1);
 		}
 		
 		xx+=G_BLOCK_SIZE;
@@ -115,13 +135,19 @@ for (r=0;r<boardHeight;r++) {
 var xx = G_XSTART + currentBlockX*G_BLOCK_SIZE + currentBoardNumber*totalDistance;
 var yy = G_YSTART + currentBlockY*G_BLOCK_SIZE;
 var i;
+var squareColor;
+if (highlightedRow>0) {
+	squareColor = colorGold;
+} else {
+	squareColor = c_white;
+}
 for (i=0;i<currentBlockWidth;i++) {
-	draw_sprite(sprSquare,0,xx,yy);
+	draw_sprite_ext(sprSquare,0,xx,yy,1,1,0,squareColor,1);
 	draw_text(xx+G_BLOCK_SIZE/2, yy+G_BLOCK_SIZE/2,	string(currentBlockNumber));
 	xx+=G_BLOCK_SIZE;
 }
 
-// Draw the current score (debug)
+// Draw the current score
 var xx = G_XSTART;
 var yy = G_YSTART + (boardHeight+0.5)*G_BLOCK_SIZE;
 draw_set_font(fontUI);

@@ -17,5 +17,5 @@ currentBlockNumber = 1;
 currentBlockWidth = 1;
 currentBoardNumber = 0;
 
-// Other stuff
-rowAboutToBeCleared = -1;
+// Other states
+highlightedRow = -1;

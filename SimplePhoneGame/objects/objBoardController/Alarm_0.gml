@@ -66,11 +66,11 @@ if (!isStick) {
 	}
 }
 
-// Allow tapping again
-canTap = true;
-
 // Update the drawer with new state
 event_perform(ev_other,ev_user2);
+
+// Allow tapping again
+canTap = true;
 
 // Reset timer
 alarm[0] = timeBetweenFalls; 

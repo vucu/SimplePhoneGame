@@ -9,12 +9,21 @@ if (score<100)
 {
 	switch (boardNumber) 
 	{
+		case 0: return 2;
+		case 1: return 1;
+		case 2: return irandom_range(2,3);
+	}	
+} 
+if (score<200) 
+{
+	switch (boardNumber) 
+	{
 		case 0: return irandom_range(1,2);
 		case 1: return 1;
 		case 2: return irandom_range(2,3);
 	}	
 } 
-else if (score<300) 
+else if (score<500) 
 {
 	switch (boardNumber) 
 	{
@@ -23,7 +32,7 @@ else if (score<300)
 		case 2: return irandom_range(1,4);
 	}		
 }
-else if (score<800) 
+else if (score<1000) 
 {
 	switch (boardNumber) 
 	{
