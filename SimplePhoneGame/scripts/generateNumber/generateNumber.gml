@@ -9,8 +9,8 @@ if (score<100)
 {
 	switch (boardNumber) 
 	{
-		case 0: return 1;
-		case 1: return irandom_range(1,2);
+		case 0: return irandom_range(1,2);
+		case 1: return 1;
 		case 2: return irandom_range(2,3);
 	}	
 } 
@@ -18,8 +18,8 @@ else if (score<300)
 {
 	switch (boardNumber) 
 	{
-		case 0: return irandom_range(1,2);
-		case 1: return irandom_range(0,2);
+		case 0: return irandom_range(0,2);
+		case 1: return irandom_range(1,2);
 		case 2: return irandom_range(1,4);
 	}		
 }
@@ -27,8 +27,8 @@ else if (score<800)
 {
 	switch (boardNumber) 
 	{
-		case 0: return irandom_range(0,3);
-		case 1: return irandom_range(0,4);
+		case 0: return irandom_range(0,4);
+		case 1: return irandom_range(0,3);
 		case 2: return irandom_range(0,7);
 	}	
 }
