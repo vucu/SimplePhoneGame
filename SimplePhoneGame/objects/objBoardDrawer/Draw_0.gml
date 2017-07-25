@@ -147,7 +147,13 @@ for (i=0;i<currentBlockWidth;i++) {
 	xx+=G_BLOCK_SIZE;
 }
 
-// Draw the current score
+// UI - Draw above the board
+var xx = G_XSTART + G_BLOCK_SIZE*6 + G_DISTANCE_BETWEEN_BOARDS*2;
+var yy = G_YSTART + (boardHeight+0.5)*G_BLOCK_SIZE;
+draw_set_font(fontTitle);
+draw_set_halign(fa_right);
+draw_text(xx, yy, header);
+
 var xx = G_XSTART;
 var yy = G_YSTART + (boardHeight+0.5)*G_BLOCK_SIZE;
 draw_set_font(fontUI);

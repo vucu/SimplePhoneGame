@@ -38,6 +38,7 @@ if (!isStick) {
 		{
 			var v = getTotalValueAtRow(boardC,r);
 			score += v;
+			myDrawer.header = generateHeaderString(boardA, boardB, boardC, r);
 			emptyBoard(boardA,boardHeight);
 			emptyBoard(boardB,boardHeight);
 			emptyBoard(boardC,boardHeight);

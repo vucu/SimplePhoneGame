@@ -1,18 +1,24 @@
 /// @description Tap - left/right
 if (!canTap) return;
 
-// It cannot move if the other block is occupied
-var currentBoard;
-switch (currentBoardNumber) {
-	case 0: currentBoard = boardA; break;
-	case 1: currentBoard = boardB; break;
-	case 2: currentBoard = boardC; break;
+// Determine the next position
+var nextBlockX;
+var nextBoardNumber;
+nextBlockX = (currentBlockX+1) % 2;
+if (currentBlockX==1) nextBoardNumber = (currentBoardNumber+1)%3;
+else nextBoardNumber = currentBoardNumber;
+var nextBoard;
+switch (nextBoardNumber) {
+	case 0: nextBoard = boardA; break;
+	case 1: nextBoard = boardB; break;
+	case 2: nextBoard = boardC; break;
 };
-if (!canMove(currentBoard,currentBlockX,currentBlockY,currentBlockWidth)) return;
 
-if (currentBlockWidth==1) {
-	currentBlockX = (currentBlockX+1) % 2;
-} 
+// If the next position is occupied, it cannot move
+if (nextBoard[currentBlockY,nextBlockX]>=0) return;
+
+currentBoardNumber = nextBoardNumber;
+currentBlockX = nextBlockX;
 
 // Update the drawer with new state
 event_perform(ev_other,ev_user2);
