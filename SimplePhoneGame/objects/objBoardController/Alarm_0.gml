@@ -58,18 +58,9 @@ if (!isStick) {
 		{
 			currentBlockX = 1;
 			currentBlockY = 0;
-			currentBlockNumber = bestNumber(boardA,boardB,boardC,9);
-			if (currentBlockNumber<0) currentBlockNumber=irandom_range(0,9);
+			currentBlockNumber = generateNumber(boardA,boardB,boardC);
 			currentBlockWidth = 1;
 		}
-		
-		
-		currentBlockX = 1;
-		currentBlockY = 0;
-	
-		currentBlockNumber = bestNumber(boardA,boardB,boardC,9);
-		if (currentBlockNumber<0) currentBlockNumber = irandom_range(0,9);
-		currentBlockWidth = 1;
 		
 		// Switch to next board
 		currentBoardNumber = nextBoardNumber;

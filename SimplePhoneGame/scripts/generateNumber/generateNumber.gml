@@ -1,69 +1,72 @@
-/// @function generateNumber(boardNumber)
-/// @param {real} boardNumber The board it will generate the number for.	
+/// @function generateNumber(boardA, boardB, boardC)
 
-var boardNumber = argument0;
+var boardA = argument0;
+var boardB = argument1;
+var boardC = argument2;
+
+// Random
+var coin = random(1);
 
 // Note: True beginners are easily frustrated by this rule.
 // Needs to be up to 100, so they're used to it
 
+var solverChance = 0;
+var limit = 9;
+
 // Up to 75, they'll learn about changing lanes
 if (score<75) 
 {
-	switch (boardNumber) 
-	{
-		case 0: return irandom_range(1,2);
-		case 1: return irandom_range(1,2);
-		case 2: return irandom_range(1,2);
-	}	
+	limit = 2;
+	solverChance = 0.8;
 } 
-else if (score<150) 
+else if (score<200) 
 {
-	switch (boardNumber) 
-	{
-		case 0: return irandom_range(1,2);
-		case 1: return irandom_range(1,2);
-		case 2: return irandom_range(1,3);
-	}	
+	limit = 3;
+	solverChance = 0.7;
 } 
-else if (score<400) 
+else if (score<500) 
 {
-	switch (boardNumber) 
-	{
-		case 0: return irandom_range(1,3);
-		case 1: return irandom_range(1,3);
-		case 2: return irandom_range(1,3);
-	}	
+	limit = 4;
+	solverChance = 0.6;
 } 
 else if (score<1000) 
 {
-	switch (boardNumber) 
-	{
-		case 0: return irandom_range(0,3);
-		case 1: return irandom_range(0,3);
-		case 2: return irandom_range(0,3);
-	}		
+	limit = 5;
+	solverChance = 0.5;		
 }
 else if (score<2000) 
 {
-	return irandom_range(0,4);		
+	limit = 6;
+	solverChance = 0.4;		
 }
-else if (score<4000) 
+else if (score<5000) 
 {
-	return irandom_range(0,5);		
-}
-else if (score<7000) 
-{
-	return irandom_range(0,6);	
+	limit = 7;
+	solverChance = 0.3;		
 }
 else if (score<10000) 
 {
-	return irandom_range(0,7);
+	limit = 8;
+	solverChance = 0.4;		
 }
 else if (score<20000) 
 {
-	return irandom_range(0,8);
+	limit = 9;
+	solverChance = 0.2;	
+}
+else if (score<50000) 
+{
+	limit = 9;
+	solverChance = 0.1;	
 } 
 else 
 {
-	return irandom_range(0,9);
+	limit = 9;
 }
+
+show_debug_message(coin);
+var v = -1;
+if (coin<solverChance) v = bestNumber(boardA, boardB, boardC, limit);
+if (v<=0) v = irandom_range(0,limit);
+
+return v;
