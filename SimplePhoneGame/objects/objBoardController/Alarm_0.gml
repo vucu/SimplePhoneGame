@@ -45,25 +45,10 @@ if (!isStick) {
 		}
 		
 		// Create a new block
-		var nextBoardNumber = (currentBoardNumber+1) % 3;
-		if (score==0) 
-		{
-			currentBlockX = 0;
-			currentBlockY = 0;
-			if (nextBoardNumber==2) currentBlockNumber = 2;
-			else currentBlockNumber = 1;
-			currentBlockWidth = 1;
-		} 
-		else 
-		{
-			currentBlockX = 1;
-			currentBlockY = 0;
-			currentBlockNumber = generateNumber(boardA,boardB,boardC);
-			currentBlockWidth = 1;
-		}
+		event_perform(ev_other,ev_user3);
 		
 		// Switch to next board
-		currentBoardNumber = nextBoardNumber;
+		currentBoardNumber = (currentBoardNumber+1) % 3;
 	}
 }
 
