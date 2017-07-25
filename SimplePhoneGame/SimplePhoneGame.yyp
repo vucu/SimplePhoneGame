@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "805b1cfb-1f45-4dac-be0a-9a398ad29672",
+            "Value": {
+                "id": "c023f54a-ff38-49f0-9fd5-94c09530c486",
+                "resourcePath": "objects\\objBoardDrawer\\objBoardDrawer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "75d3ae8b-4062-47ce-b7c5-66d2726fd25b",

@@ -1,9 +1,3 @@
-// Graphic constants
-G_XSTART = 50;
-G_YSTART = 50;
-G_BLOCK_SIZE = 64;
-G_DISTANCE_BETWEEN_BOARDS = 80;
-
 // properties
 timeBetweenFalls = 60;
 boardHeight = 8;
@@ -27,6 +21,10 @@ currentBoardNumber = 0;
 emptyBoard(boardA,boardHeight);
 emptyBoard(boardB,boardHeight);
 emptyBoard(boardC,boardHeight);
+
+// Create the drawer
+myDrawer = instance_create_depth(x,y,0,objBoardDrawer);
+event_perform(ev_other,ev_user2);
 
 // Start
 alarm[0] = timeBetweenFalls;
