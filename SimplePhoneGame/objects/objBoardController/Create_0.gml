@@ -10,7 +10,6 @@ boardHeight = 9;
 
 // state variables
 canTap = true;
-isOnlyGeneratingOne = true;
 
 // Current block: (X,Y) always start at leftmost position
 // Note: Later on, if I add block height, it will start at the bottom left position

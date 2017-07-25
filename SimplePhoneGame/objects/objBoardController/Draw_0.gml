@@ -78,3 +78,8 @@ for (i=0;i<currentBlockWidth;i++) {
 	draw_text(xx+G_BLOCK_SIZE/2, yy+G_BLOCK_SIZE/2,	string(currentBlockNumber));
 	xx+=G_BLOCK_SIZE;
 }
+
+// Draw the current score (debug)
+var xx = G_XSTART + totalDistance;
+var yy = G_YSTART + (boardHeight+1)*G_BLOCK_SIZE;
+draw_text(xx, yy, string(score));

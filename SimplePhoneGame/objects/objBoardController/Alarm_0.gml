@@ -26,8 +26,12 @@ if (!isStick) {
 	} 
 	else {
 		// Stick it to the board
-		currentBoard[@ currentBlockY, currentBlockX] = currentBlockNumber;
-		
+		stickBlocktoBoard(currentBoard,
+			currentBlockX,
+			currentBlockY,
+			currentBlockWidth,
+			currentBlockNumber);
+					
 		// Check if we can clear a row
 		var r = rowToBeCleared(boardA, boardB, boardC);
 		if (r>0) {
@@ -36,19 +40,24 @@ if (!isStick) {
 			deleteRow(boardA, boardB, boardC, r);
 		}
 		
-		// With enough score, turn off this feature
-		if (score>=444) {
-			isOnlyGeneratingOne = false;
+		// Create a new block
+		if (score==0) {
+			currentBlockX = 0;
+			currentBlockY = 0;
+			currentBlockNumber = 1;
+			currentBlockWidth = 3;
+		} else if (score==222) {
+			currentBlockX = 1;
+			currentBlockY = 0;
+			currentBlockNumber = 1;
+			currentBlockWidth = 1;
+		} else {
+			currentBlockX = 1;
+			currentBlockY = 0;
+			currentBlockNumber = irandom_range(0,9);
+			currentBlockWidth = 1;
 		}
 		
-		// Create a new block
-		currentBlockX = 1;
-		currentBlockY = 0;
-		if (isOnlyGeneratingOne) {
-			currentBlockNumber = 1;
-		}
-		else currentBlockNumber = irandom_range(0,9);
-		currentBlockWidth = 1;
 		
 		// Switch to next board
 		currentBoardNumber = (currentBoardNumber+1) % 3;
