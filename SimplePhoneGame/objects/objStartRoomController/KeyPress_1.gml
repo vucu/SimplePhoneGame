@@ -1,1 +1,1 @@
-room_goto(rmGame);
+alarm[0]=15;

@@ -1,6 +1,7 @@
 /// @description Draw the boards to screen
 
 var totalDistance = 2*G_BLOCK_SIZE+G_DISTANCE_BETWEEN_BOARDS;
+var totalWidth = 6*G_BLOCK_SIZE+2*G_DISTANCE_BETWEEN_BOARDS;
 var colorGold = make_color_rgb(255,207,63);
 		
 // Draw boards outline
@@ -35,6 +36,35 @@ for (i=0;i<3;i++) {
 	// Next board
 	xx+=totalDistance;
 }
+
+
+// Draw the board dashed lines
+draw_set_alpha(0.5);
+draw_set_color(make_color_rgb(175,175,175));
+var i;
+for (i=1;i<boardHeight;i++) {
+	// Dashing content
+	var yy = G_YSTART + G_BLOCK_SIZE*i;
+	var xBegin = G_XSTART;
+	var xEnd = G_XSTART + totalWidth;
+	var dashLength = G_BLOCK_SIZE/3;
+	var w = 2;
+	
+	var currentDashXStart = xBegin;
+	var isDashVisible = true;
+	while (currentDashXStart+dashLength < xEnd) {
+		if (isDashVisible) {
+			draw_line_width(currentDashXStart,yy,
+				currentDashXStart+dashLength,yy,w);
+		}
+		
+		// Loop update
+		currentDashXStart = currentDashXStart+dashLength;
+		isDashVisible = !isDashVisible;
+	}
+}
+draw_set_alpha(1);
+
 
 // Draw the plus sign
 var xcenter = G_XSTART + 2*G_BLOCK_SIZE + G_DISTANCE_BETWEEN_BOARDS/2;
