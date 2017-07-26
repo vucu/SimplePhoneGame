@@ -2,6 +2,7 @@
 timeBetweenFalls = 60;
 solverChance = 0.9;
 numberLimit = 2;
+boardCLimitIncrement = 0;
 boardHeight = 8;
 
 // state variables

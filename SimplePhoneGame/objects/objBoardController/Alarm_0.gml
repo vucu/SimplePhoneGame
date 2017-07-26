@@ -5,6 +5,7 @@ switch (currentBoardNumber) {
 	case 0: currentBoard = boardA; break;
 	case 1: currentBoard = boardB; break;
 	case 2: currentBoard = boardC; break;
+	default: show_message("[ERROR] At objBoardController. No board index"); return;
 };
 
 // Temporarily prohibiting tap
