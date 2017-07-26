@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "7879c489-2e1a-4a5f-a467-f8faed37cf05",
+            "Value": {
+                "id": "9137e544-12b7-49f5-8310-32c291b61964",
+                "resourcePath": "rooms\\rmStart\\rmStart.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7d0034b6-7bce-4d40-92cc-86a983185633",
             "Value": {
                 "id": "df3fa4df-101b-4b4a-8040-1e98bc5187be",
@@ -195,6 +203,14 @@
             "Value": {
                 "id": "c023f54a-ff38-49f0-9fd5-94c09530c486",
                 "resourcePath": "objects\\objBoardDrawer\\objBoardDrawer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "807339e3-38bd-4b80-90ea-4858ec71324e",
+            "Value": {
+                "id": "ecb53180-8ed1-4ef9-ab54-72fdfd6f5cc8",
+                "resourcePath": "objects\\objUIDown\\objUIDown.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -271,6 +287,14 @@
             }
         },
         {
+            "Key": "adc4ceea-f11a-4225-b7e4-f3072a268a3c",
+            "Value": {
+                "id": "5542d4a0-340c-48c1-bb0c-9f11c5507bb4",
+                "resourcePath": "views\\adc4ceea-f11a-4225-b7e4-f3072a268a3c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b4a3312c-e91e-4915-bc30-fdb66d139d44",
             "Value": {
                 "id": "9d3caa0e-9d72-4089-914b-089f8acd4a67",
@@ -319,6 +343,14 @@
             }
         },
         {
+            "Key": "c8304f65-55fe-4bc3-a5a4-c9c55e8e016f",
+            "Value": {
+                "id": "63db1545-b151-4b4c-ac6a-19e627a983ad",
+                "resourcePath": "objects\\objStartRoomController\\objStartRoomController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cbadd27b-faca-411a-8906-91bc5cf83e18",
             "Value": {
                 "id": "f42140e7-1b4a-4b9e-89f5-a736ead171c8",
@@ -340,6 +372,14 @@
                 "id": "462e4b9c-7508-4fff-8a70-b3434e271920",
                 "resourcePath": "views\\cfccf4bd-1c8a-4988-a915-fb03ee8a340e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d62b73e5-dcaa-43c6-8023-0e1d2e87c06b",
+            "Value": {
+                "id": "40b2b6cf-653f-4203-911b-f151a5a4f4b7",
+                "resourcePath": "sprites\\sprUIDown\\sprUIDown.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
