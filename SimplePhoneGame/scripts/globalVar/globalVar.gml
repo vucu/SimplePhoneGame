@@ -1,0 +1,1 @@
+global.fontGameTitle = font_add("GameTitle.ttf",72,false,false,32,128);

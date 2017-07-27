@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "ac8a4d1e-5791-45db-a341-e82257f239d6",
+            "Value": {
+                "id": "f2fcb59e-bb14-46e1-be75-1a94d9ec292d",
+                "resourcePath": "scripts\\globalVar\\globalVar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ad566db0-eff4-4751-91a1-f42d1bee44d9",
             "Value": {
                 "id": "85ecebf7-426c-4131-926c-b668d6bcfdfe",
@@ -439,6 +447,14 @@
             }
         },
         {
+            "Key": "ef54ec35-aa58-4550-b832-ec32aa04d7ac",
+            "Value": {
+                "id": "4c6c1e9f-e4fa-4f15-bf31-2fb90edc2599",
+                "resourcePath": "datafiles_yy\\GameTitle.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "f1b90f41-2ce3-4786-b547-66ebfc06c1b8",
             "Value": {
                 "id": "6a184ee2-7b54-4967-9250-e674d461ae08",
@@ -481,6 +497,7 @@
         "feff81b4-5830-41cf-a616-6a1b9ba71ac8",
         "9b71cd08-ce18-4187-af8d-9b5b92ae7471",
         "3c4c03e0-8a05-49ae-9700-d40abcc7693f",
+        "ac8a4d1e-5791-45db-a341-e82257f239d6",
         "b4a3312c-e91e-4915-bc30-fdb66d139d44",
         "710cfa66-4455-462f-84b7-cbf0814970f1",
         "1f543c42-6aeb-4719-8035-50afba4a1fb7"

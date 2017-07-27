@@ -1,2 +1,3 @@
 /// @description Init
 randomize();
+globalVar();
