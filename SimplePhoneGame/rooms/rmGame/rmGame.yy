@@ -19,7 +19,7 @@
             "mvc": "1.0",
             "depth": 0,
             "grid_x": 40,
-            "grid_y": 40,
+            "grid_y": 30,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -86,11 +86,11 @@
             "animationFPS": 15,
             "animationSpeedType": 0,
             "colour": {
-                "Value": 4294048253
+                "Value": 4294967295
             },
             "hspeed": 0,
             "htiled": false,
-            "spriteId": "00000000-0000-0000-0000-000000000000",
+            "spriteId": "c065da6f-698b-4dc0-a3ec-4edf5b8f10a8",
             "stretch": false,
             "userdefined_animFPS": false,
             "vspeed": 0,
@@ -114,8 +114,8 @@
         "id": "026a107a-d87a-4cda-bb50-0840def64cd3",
         "modelName": "GMRoomSettings",
         "mvc": "1.0",
-        "Height": 640,
-        "Width": 640,
+        "Height": 720,
+        "Width": 1280,
         "inheritRoomSettings": false,
         "persistent": false
     },

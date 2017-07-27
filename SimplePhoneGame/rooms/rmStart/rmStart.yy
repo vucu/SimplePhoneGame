@@ -86,11 +86,11 @@
             "animationFPS": 15,
             "animationSpeedType": 0,
             "colour": {
-                "Value": 4294048253
+                "Value": 4294967295
             },
             "hspeed": 0,
             "htiled": false,
-            "spriteId": "00000000-0000-0000-0000-000000000000",
+            "spriteId": "f6d5c8d8-9f74-4dba-b59a-df3b630e4875",
             "stretch": false,
             "userdefined_animFPS": false,
             "vspeed": 0,
@@ -114,8 +114,8 @@
         "id": "4bfd482a-02a3-4e71-9c2f-6afab77c31f8",
         "modelName": "GMRoomSettings",
         "mvc": "1.0",
-        "Height": 640,
-        "Width": 640,
+        "Height": 720,
+        "Width": 1280,
         "inheritRoomSettings": false,
         "persistent": false
     },

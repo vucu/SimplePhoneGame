@@ -3,8 +3,8 @@
 // Graphic constants
 G_XSTART = 25;
 G_YSTART = 25;
-G_BLOCK_SIZE = 64;
-G_DISTANCE_BETWEEN_BOARDS = 80;
+G_BLOCK_SIZE = 75;
+G_DISTANCE_BETWEEN_BOARDS = 250;
 
 // State
 boardHeight = 0;

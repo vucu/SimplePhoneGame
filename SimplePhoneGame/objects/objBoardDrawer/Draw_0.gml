@@ -130,8 +130,9 @@ for (r=0;r<boardHeight;r++) {
 	var i;
 	for (i=0;i<2;i++) {
 		if (boardA[r,i]>=0) {
-			draw_sprite_ext(sprSquare,
-				0,xx,yy,1,1,0,squareColor,1);
+			draw_sprite_stretched_ext(sprSquare,
+				0,xx,yy,
+				G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
 			draw_text_color(xx+G_BLOCK_SIZE/2,
 				yy+G_BLOCK_SIZE/2,
 				string(boardA[r,i]),
@@ -139,8 +140,9 @@ for (r=0;r<boardHeight;r++) {
 				textColor,textColor,1);
 		}
 		if (boardB[r,i]>=0) {
-			draw_sprite_ext(sprSquare,
-				0,xx+totalDistance,yy,1,1,0,squareColor,1);
+			draw_sprite_stretched_ext(sprSquare,
+				0,xx+totalDistance,yy,
+				G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
 			draw_text_color(xx+G_BLOCK_SIZE/2+totalDistance,
 				yy+G_BLOCK_SIZE/2,
 				string(boardB[r,i]),
@@ -148,8 +150,9 @@ for (r=0;r<boardHeight;r++) {
 				textColor,textColor,1);
 		}
 		if (boardC[r,i]>=0) {
-			draw_sprite_ext(sprSquare,
-				0,xx+2*totalDistance,yy,1,1,0,squareColor,1);
+			draw_sprite_stretched_ext(sprSquare,
+				0,xx+2*totalDistance,yy,
+				G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
 			draw_text_color(xx+G_BLOCK_SIZE/2+2*totalDistance,
 				yy+G_BLOCK_SIZE/2,
 				string(boardC[r,i]),
@@ -172,20 +175,17 @@ if (highlightedRow>0) {
 	squareColor = c_white;
 }
 for (i=0;i<currentBlockWidth;i++) {
-	draw_sprite_ext(sprSquare,0,xx,yy,1,1,0,squareColor,1);
+	draw_sprite_stretched_ext(sprSquare,
+		0,xx,yy,
+		G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
 	draw_text(xx+G_BLOCK_SIZE/2, yy+G_BLOCK_SIZE/2,	string(currentBlockNumber));
 	xx+=G_BLOCK_SIZE;
 }
 
-// UI - Draw above the board
-var xx = G_XSTART + G_BLOCK_SIZE*6 + G_DISTANCE_BETWEEN_BOARDS*2;
-var yy = G_YSTART + (boardHeight+0.5)*G_BLOCK_SIZE;
-draw_set_font(fontTitle);
-draw_set_halign(fa_right);
-draw_text(xx, yy, header);
-
-var xx = G_XSTART;
-var yy = G_YSTART + (boardHeight+0.5)*G_BLOCK_SIZE;
+// UI
+var xx = G_XSTART + totalWidth + G_BLOCK_SIZE;
+var yy = G_YSTART;
 draw_set_font(fontUI);
 draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 draw_text(xx, yy, "Score: "+string(score));
