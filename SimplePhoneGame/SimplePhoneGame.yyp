@@ -303,14 +303,6 @@
             }
         },
         {
-            "Key": "807339e3-38bd-4b80-90ea-4858ec71324e",
-            "Value": {
-                "id": "c7dc4cd3-660d-499d-9f1f-e4ef8bac20c1",
-                "resourcePath": "objects\\objUIDown\\objUIDown.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "81e50a84-35d1-4de3-8e15-c742df8c9299",
             "Value": {
                 "id": "8812713e-2898-4af9-bea3-d261dcd2acbb",
@@ -495,14 +487,6 @@
             }
         },
         {
-            "Key": "d62b73e5-dcaa-43c6-8023-0e1d2e87c06b",
-            "Value": {
-                "id": "40b2b6cf-653f-4203-911b-f151a5a4f4b7",
-                "resourcePath": "sprites\\sprUIDown\\sprUIDown.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "d86cb6c9-aae4-4efc-8712-785f92a4c1f6",
             "Value": {
                 "id": "797a124b-372a-43c4-a448-fe57e496c2db",
@@ -548,6 +532,14 @@
                 "id": "bfa637d3-d346-4782-ba53-5157198fba80",
                 "resourcePath": "views\\ea69e045-56df-4ea7-bf9b-0741d9c5742e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ec88b88b-77eb-4b5e-a7e7-1d2f230da9a1",
+            "Value": {
+                "id": "bb405d4a-00dc-4ed7-8ce3-f315c3a3eb1e",
+                "resourcePath": "objects\\objUIDropButton\\objUIDropButton.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,5 +1,7 @@
 /// @description Draw the boards to screen
 
+if (isPause) return;
+
 var totalDistance = 2*G_BLOCK_SIZE+G_DISTANCE_BETWEEN_BOARDS;
 var totalWidth = 6*G_BLOCK_SIZE+2*G_DISTANCE_BETWEEN_BOARDS;
 var colorGold = make_color_rgb(255,207,63);

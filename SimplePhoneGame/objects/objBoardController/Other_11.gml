@@ -1,4 +1,5 @@
 /// @description Tap - down
+if (isPause) return;
 if (!canTap) return;
 if (isTappingDown) return;
 

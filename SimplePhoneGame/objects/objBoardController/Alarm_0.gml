@@ -1,4 +1,5 @@
 /// @description Periodic check
+if (isPause) return;
 
 var currentBoard;
 switch (currentBoardNumber) {

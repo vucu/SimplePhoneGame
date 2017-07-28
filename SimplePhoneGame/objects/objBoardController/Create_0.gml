@@ -31,6 +31,8 @@ event_perform(ev_other,ev_user2);
 
 // State
 isTappingDown = false;
+isPause = false;
+afterPauseTimeBetweenFallRemain = 0;
 
 // Start
 alarm[0] = timeBetweenFalls;

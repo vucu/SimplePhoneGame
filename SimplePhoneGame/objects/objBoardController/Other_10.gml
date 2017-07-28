@@ -1,4 +1,5 @@
 /// @description Tap - left/right
+if (isPause) return;
 if (!canTap) return;
 
 // Determine the next position

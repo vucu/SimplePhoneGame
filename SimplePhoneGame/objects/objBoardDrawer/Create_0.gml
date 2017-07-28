@@ -3,7 +3,7 @@
 // Graphic constants
 G_XSTART = 25;
 G_YSTART = 25;
-G_BLOCK_SIZE = 75;
+G_BLOCK_SIZE = 80;
 G_DISTANCE_BETWEEN_BOARDS = 250;
 
 // State
@@ -23,3 +23,4 @@ currentBoardNumber = 0;
 // Other states
 highlightedRow = -1;
 isDrawingCurrentBlock = true;
+isPause = false;

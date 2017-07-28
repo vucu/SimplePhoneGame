@@ -1,1 +1,0 @@
-isHighlighed = false;
