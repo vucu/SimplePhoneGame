@@ -3,7 +3,7 @@
     "modelName": "GMHtml5Options",
     "mvc": "1.0",
     "name": "HTML5",
-    "option_html5_allow_fullscreen": true,
+    "option_html5_allow_fullscreen": false,
     "option_html5_browser_title": "Oh! That's a puzzle!!",
     "option_html5_centregame": true,
     "option_html5_display_cursor": true,
