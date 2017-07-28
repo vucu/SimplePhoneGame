@@ -1,0 +1,2 @@
+isHighlighed = false;
+text = "";
