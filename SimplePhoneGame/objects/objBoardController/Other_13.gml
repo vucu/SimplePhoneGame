@@ -47,46 +47,46 @@ else
 		boardCLimitIncrement = 2;
 		solverChance = 0.7;
 	} 
-	else if (score<500) 
+	else if (score<400) 
 	{
 		numberLimit = 4;
 		boardCLimitIncrement = 3;
 		solverChance = 0.6;
 		timeBetweenFalls = 55;
 	} 
-	else if (score<1000) 
+	else if (score<600) 
 	{
 		numberLimit = 5;
 		boardCLimitIncrement = 2;
 		solverChance = 0.5;		
 	}
-	else if (score<2000) 
+	else if (score<800) 
 	{
 		numberLimit = 6;
 		boardCLimitIncrement = 2;
 		solverChance = 0.4;	
 		timeBetweenFalls = 50;	
 	}
-	else if (score<5000) 
+	else if (score<1000) 
 	{
 		numberLimit = 7;
 		boardCLimitIncrement = 2;
 		solverChance = 0.3;		
 	}
-	else if (score<10000) 
+	else if (score<1200) 
 	{
 		numberLimit = 8;
 		boardCLimitIncrement = 1;
 		solverChance = 0.4;	
 		timeBetweenFalls = 45;	
 	}
-	else if (score<20000) 
+	else if (score<1400) 
 	{
 		numberLimit = 9;
 		boardCLimitIncrement = 0;
 		solverChance = 0.2;	
 	}
-	else if (score<50000) 
+	else if (score<1600) 
 	{
 		numberLimit = 9;
 		solverChance = 0.1;	
