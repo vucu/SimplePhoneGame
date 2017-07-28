@@ -40,7 +40,7 @@
     "option_ios_splashscreen_iphone_portrait": "${base_options_dir}\/ios\/splash\/iphone_portrait.png",
     "option_ios_splashscreen_iphone_retina_landscape": "${base_options_dir}\/ios\/splash\/iphone_retina_landscape.png",
     "option_ios_splashscreen_iphone_retina_portrait": "${base_options_dir}\/ios\/splash\/iphone_retina_portrait.png",
-    "option_ios_team_id": "84XT68LKGS",
+    "option_ios_team_id": "",
     "option_ios_texture_page": "2048x2048",
     "option_ios_use_facebook": false,
     "option_ios_version": {
