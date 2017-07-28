@@ -18,6 +18,8 @@ if (!isStick) {
 	// Move the block down
 	currentBlockY++;
 } else {
+	isTappingDown = false;
+
 	// If the block is at the top row, game over
 	if (currentBlockY == 0) {
 		with (objGameController) {
@@ -60,4 +62,8 @@ event_perform(ev_other,ev_user2);
 canTap = true;
 
 // Reset timer
-alarm[0] = timeBetweenFalls; 
+if (isTappingDown) {
+	alarm[0] = 3;
+} else {
+	alarm[0] = timeBetweenFalls; 
+}

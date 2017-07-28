@@ -29,5 +29,8 @@ emptyBoard(boardC,boardHeight);
 myDrawer = instance_create_depth(x,y,0,objBoardDrawer);
 event_perform(ev_other,ev_user2);
 
+// State
+isTappingDown = false;
+
 // Start
 alarm[0] = timeBetweenFalls;
