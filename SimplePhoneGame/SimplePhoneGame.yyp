@@ -119,14 +119,6 @@
             }
         },
         {
-            "Key": "3c8d9dc1-f6c5-455b-97ca-dca721622781",
-            "Value": {
-                "id": "13061c7b-0cbf-4467-b907-53c4bbef3e98",
-                "resourcePath": "datafiles_yy\\UIText.ttf.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "402ec6ec-8412-40b8-ace1-211b8d3a096c",
             "Value": {
                 "id": "f4d9cc1e-b1b8-4eac-97af-340c7351f287",
@@ -183,10 +175,26 @@
             }
         },
         {
+            "Key": "57cc3457-0d01-46f5-a72c-ed1fc6caa469",
+            "Value": {
+                "id": "44c3dbd6-abdd-4e07-b5d6-5036e33f320d",
+                "resourcePath": "fonts\\fontUITextLarge\\fontUITextLarge.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "59fda1a5-a5b2-4d44-b456-030aba52f3a1",
             "Value": {
                 "id": "21b34fba-bc28-4568-b4ef-912df3887030",
-                "resourcePath": "fonts\\fontUI\\fontUI.yy",
+                "resourcePath": "fonts\\fontUITextSmall\\fontUITextSmall.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "5a14bf00-696b-4a72-bf2b-2549912816b3",
+            "Value": {
+                "id": "6e24ef0b-11cc-4f3f-be90-e42fb76892fd",
+                "resourcePath": "fonts\\fontButtonTextMedium\\fontButtonTextMedium.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -386,7 +394,7 @@
             "Key": "ad9560d6-a842-4bbd-87db-66f8348317ca",
             "Value": {
                 "id": "4d88cf42-6b34-4e00-ab3f-57b7e3bdf62d",
-                "resourcePath": "fonts\\fontTitle\\fontTitle.yy",
+                "resourcePath": "fonts\\fontGameTitle\\fontGameTitle.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "cc94cf29-e82c-4d78-a8f4-eb87f53712b6",
+            "Value": {
+                "id": "0773d334-bdbd-4dee-a001-ce4d5418c188",
+                "resourcePath": "fonts\\fontUITextMedium\\fontUITextMedium.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "8a5b3a94-5b92-4872-8c95-fdbf4f229dc2",
@@ -511,14 +527,6 @@
             }
         },
         {
-            "Key": "e2b9b163-1395-46b3-91a6-89ea71b9a90f",
-            "Value": {
-                "id": "4f56f8f5-31ad-4398-9109-cad8ec0a9523",
-                "resourcePath": "datafiles_yy\\ButtonText.ttf.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "44d82e21-dd6f-4ada-8387-9c51f229fdfd",
@@ -548,14 +556,6 @@
                 "id": "738d5629-ba71-4208-bf52-6abc5193a14d",
                 "resourcePath": "views\\ed55b569-eb27-4a98-9894-facfca249ddd.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "ef54ec35-aa58-4550-b832-ec32aa04d7ac",
-            "Value": {
-                "id": "4c6c1e9f-e4fa-4f15-bf31-2fb90edc2599",
-                "resourcePath": "datafiles_yy\\GameTitle.ttf.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
