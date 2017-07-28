@@ -3,7 +3,7 @@ timeBetweenFalls = 60;
 solverChance = 0.9;
 numberLimit = 2;
 boardCLimitIncrement = 0;
-boardHeight = 8;
+boardHeight = global.boardHeight;
 
 // state variables
 canTap = true;

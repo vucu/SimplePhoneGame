@@ -7,10 +7,13 @@ G_BLOCK_SIZE = 75;
 G_DISTANCE_BETWEEN_BOARDS = 250;
 
 // State
-boardHeight = 0;
+boardHeight = global.boardHeight;
 boardA = [];
 boardB = [];
 boardC = [];
+emptyBoard(boardA,global.boardHeight);
+emptyBoard(boardB,global.boardHeight);
+emptyBoard(boardC,global.boardHeight);
 currentBlockX = 0;
 currentBlockY = 0;
 currentBlockNumber = 1;
@@ -19,4 +22,4 @@ currentBoardNumber = 0;
 
 // Other states
 highlightedRow = -1;
-header = "X+Y=Z!";
+isDrawingCurrentBlock = true;

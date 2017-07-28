@@ -165,27 +165,22 @@ for (r=0;r<boardHeight;r++) {
 }
 
 // Draw current block
-var xx = G_XSTART + currentBlockX*G_BLOCK_SIZE + currentBoardNumber*totalDistance;
-var yy = G_YSTART + currentBlockY*G_BLOCK_SIZE;
-var i;
-var squareColor;
-if (highlightedRow>0) {
-	squareColor = colorGold;
-} else {
-	squareColor = c_white;
-}
-for (i=0;i<currentBlockWidth;i++) {
-	draw_sprite_stretched_ext(sprSquare,
-		0,xx,yy,
-		G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
-	draw_text(xx+G_BLOCK_SIZE/2, yy+G_BLOCK_SIZE/2,	string(currentBlockNumber));
-	xx+=G_BLOCK_SIZE;
+if (isDrawingCurrentBlock) {
+	var xx = G_XSTART + currentBlockX*G_BLOCK_SIZE + currentBoardNumber*totalDistance;
+	var yy = G_YSTART + currentBlockY*G_BLOCK_SIZE;
+	var i;
+	var squareColor;
+	if (highlightedRow>0) {
+		squareColor = colorGold;
+	} else {
+		squareColor = c_white;
+	}
+	for (i=0;i<currentBlockWidth;i++) {
+		draw_sprite_stretched_ext(sprSquare,
+			0,xx,yy,
+			G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
+		draw_text(xx+G_BLOCK_SIZE/2, yy+G_BLOCK_SIZE/2,	string(currentBlockNumber));
+		xx+=G_BLOCK_SIZE;
+	}
 }
 
-// UI
-var xx = G_XSTART + totalWidth + G_BLOCK_SIZE;
-var yy = G_YSTART;
-draw_set_font(fontUI);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_text(xx, yy, "Score: "+string(score));

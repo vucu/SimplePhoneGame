@@ -39,6 +39,22 @@
             }
         },
         {
+            "Key": "0e715d67-3bd7-4cf0-be0c-f02edce9c077",
+            "Value": {
+                "id": "de77679c-0585-41c3-8171-0886ec6b265e",
+                "resourcePath": "views\\0e715d67-3bd7-4cf0-be0c-f02edce9c077.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1092b754-3f96-4879-875e-b2c5ef8805d7",
+            "Value": {
+                "id": "b78eaf65-7a23-4d9a-81d1-c6745cddfabc",
+                "resourcePath": "sprites\\sprHelpButton\\sprHelpButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "10a64782-b543-42b8-bc3a-fe6221400c04",
             "Value": {
                 "id": "917d82af-d908-4286-99e3-3eceb85d8832",
@@ -47,10 +63,26 @@
             }
         },
         {
+            "Key": "10d01dae-b76b-46c2-b8bd-3b8c10cff425",
+            "Value": {
+                "id": "5d155484-47d5-42d8-9e19-d716b8fb7bba",
+                "resourcePath": "objects\\objStaticBoardDrawer\\objStaticBoardDrawer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1482901a-5c88-42f2-826c-6b0005c4764c",
             "Value": {
                 "id": "09f00932-0b69-4b96-99e7-2ed4069c5e02",
                 "resourcePath": "views\\1482901a-5c88-42f2-826c-6b0005c4764c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "177fbc9d-3e5a-47c6-81df-966ece69b7f5",
+            "Value": {
+                "id": "146720f6-a8f0-4175-bd00-768b09e651fa",
+                "resourcePath": "views\\177fbc9d-3e5a-47c6-81df-966ece69b7f5.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -95,6 +127,14 @@
             }
         },
         {
+            "Key": "41a53ec3-e8be-47d0-b904-70b6ca2e8936",
+            "Value": {
+                "id": "4e0d437d-4c14-48f7-8080-153857c97c2b",
+                "resourcePath": "objects\\objUIStartButton\\objUIStartButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "45d5542e-ef37-4ab0-8f2e-d673ea443a50",
             "Value": {
                 "id": "12abc6b2-783d-4173-b328-15c36e197253",
@@ -127,6 +167,14 @@
             }
         },
         {
+            "Key": "51b8a8da-a419-413e-97bc-f0a3519b0c49",
+            "Value": {
+                "id": "f394e220-3413-4fe6-b128-7677edc8dde8",
+                "resourcePath": "objects\\objScoreDrawer\\objScoreDrawer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "59fda1a5-a5b2-4d44-b456-030aba52f3a1",
             "Value": {
                 "id": "21b34fba-bc28-4568-b4ef-912df3887030",
@@ -140,6 +188,14 @@
                 "id": "92c4a970-6b1f-4275-a2be-00f588c35117",
                 "resourcePath": "scripts\\rowToBeCleared\\rowToBeCleared.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "635201f3-1d11-4968-b581-49d040ce494a",
+            "Value": {
+                "id": "9fa56bee-1f51-4caa-a5dc-84937faae09c",
+                "resourcePath": "sprites\\sprStartButton\\sprStartButton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -159,11 +215,35 @@
             }
         },
         {
+            "Key": "6c8debb4-2e5a-422c-973a-5b01bd9b243a",
+            "Value": {
+                "id": "332ed252-d5e9-4f71-91a7-819971903efb",
+                "resourcePath": "objects\\objHelpDrawer\\objHelpDrawer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6d5708b5-d6f5-4547-86f8-78e60d6b8ab2",
+            "Value": {
+                "id": "2faa9d6c-d9e9-49e0-b013-fb4c6051fc12",
+                "resourcePath": "views\\6d5708b5-d6f5-4547-86f8-78e60d6b8ab2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "710cfa66-4455-462f-84b7-cbf0814970f1",
             "Value": {
                 "id": "6c87b74c-3488-40ec-9280-ba9553d1c4b9",
                 "resourcePath": "scripts\\exhaustiveSolve\\exhaustiveSolve.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7140323a-f854-4087-96c8-923bb8588fa2",
+            "Value": {
+                "id": "7ca09c4d-95f9-424e-a702-3823d6c5eca3",
+                "resourcePath": "objects\\objUIHelpButton\\objUIHelpButton.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -188,6 +268,14 @@
                 "id": "9137e544-12b7-49f5-8310-32c291b61964",
                 "resourcePath": "rooms\\rmStart\\rmStart.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "7aee6ef3-2fab-4362-9e78-a1b51e6deaba",
+            "Value": {
+                "id": "82ef7226-c5e0-4767-86f0-d41b5823fdb9",
+                "resourcePath": "views\\7aee6ef3-2fab-4362-9e78-a1b51e6deaba.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -423,6 +511,14 @@
             }
         },
         {
+            "Key": "e2b9b163-1395-46b3-91a6-89ea71b9a90f",
+            "Value": {
+                "id": "4f56f8f5-31ad-4398-9109-cad8ec0a9523",
+                "resourcePath": "datafiles_yy\\ButtonText.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "44d82e21-dd6f-4ada-8387-9c51f229fdfd",
@@ -476,6 +572,14 @@
                 "id": "2db71ae7-5ea5-4482-8bac-418fa4c8f342",
                 "resourcePath": "sprites\\sprMenuBackground\\sprMenuBackground.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f788a2a5-12b6-43e8-9645-6db5dabc1ee3",
+            "Value": {
+                "id": "6fe404a8-e361-4e50-bc31-229feb40a105",
+                "resourcePath": "objects\\objUITextButtonBase\\objUITextButtonBase.yy",
+                "resourceType": "GMObject"
             }
         },
         {

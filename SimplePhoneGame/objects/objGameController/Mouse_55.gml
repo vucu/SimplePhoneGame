@@ -1,9 +1,1 @@
-if (isLost) {
-	event_perform(ev_other,ev_user1);
-	return;
-}
-
-
-with (objBoardController) {
-	event_perform(ev_other,ev_user1);
-}
+event_perform(ev_mouse,ev_left_press);

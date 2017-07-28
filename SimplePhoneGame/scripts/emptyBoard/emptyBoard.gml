@@ -1,4 +1,4 @@
-/// @function clearBoard(board, heigh)
+/// @function emptyBoard(board, height)
 /// @description make a board empty 
 /// @param {array} board  
 /// @param {real} height 
