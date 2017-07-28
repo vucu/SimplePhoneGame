@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "3c8d9dc1-f6c5-455b-97ca-dca721622781",
+            "Value": {
+                "id": "13061c7b-0cbf-4467-b907-53c4bbef3e98",
+                "resourcePath": "datafiles_yy\\UIText.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "402ec6ec-8412-40b8-ace1-211b8d3a096c",
             "Value": {
                 "id": "f4d9cc1e-b1b8-4eac-97af-340c7351f287",
