@@ -16,7 +16,7 @@ switch (currentBoardNumber) {
 };
 
 // Check if there's any block below it
-var isStick = shouldBlockStickToBoard(currentBoardClone,currentBlockX,currentBlockY,currentBlockWidth);
+var isStick = shouldBlockStickToBoard(currentBoardClone,currentBlockX,currentBlockY);
 
 if (isStick) {
 	stickBlocktoBoard(currentBoardClone,

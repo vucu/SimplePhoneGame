@@ -13,7 +13,7 @@ switch (currentBoardNumber) {
 canTap = false;
 
 // Check if there's any block below it
-var isStick = shouldBlockStickToBoard(currentBoard,currentBlockX,currentBlockY,currentBlockWidth);
+var isStick = shouldBlockStickToBoard(currentBoard,currentBlockX,currentBlockY);
 
 if (!isStick) {
 	// Move the block down
@@ -65,6 +65,10 @@ canTap = true;
 // Reset timer
 if (isTappingDown) {
 	alarm[0] = 3;
+	// Note: A special case is that a block is already at the
+	// bottom row, about to be stuck to the board in next turn
+	var isStick = shouldBlockStickToBoard(currentBoard,currentBlockX,currentBlockY);
+	if (isStick) alarm[0] = timeBetweenFalls; 
 } else {
 	alarm[0] = timeBetweenFalls; 
 }

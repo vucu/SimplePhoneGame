@@ -1,6 +1,7 @@
 /// @description Tap - left/right
 if (isPause) return;
 if (!canTap) return;
+if (isTappingDown) return;
 
 // Determine the next position
 var nextBlockX;
