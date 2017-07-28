@@ -3,5 +3,5 @@ isLost = true;
 
 instance_destroy(objBoardController);
 
-// Reset after sometimes
-alarm[0]=30;
+// Back to the menu
+room_goto(rmStart);
