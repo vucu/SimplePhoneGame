@@ -11,7 +11,7 @@ if (isHelpDisplaying) {
 	if (position_meeting(tapX, tapY, objUIStartButton)) {
 		// Go to next room
 		alarm[0]=15;
-	} else if (position_meeting(tapX, tapY, objUIHelpsButton)) {
+	} else if (position_meeting(tapX, tapY, objUIHelpButton)) {
 		instance_create_depth(0,0,-100,objHelpDrawer);
 		isHelpDisplaying = true;
 	}
