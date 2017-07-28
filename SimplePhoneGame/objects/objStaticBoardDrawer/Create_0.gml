@@ -1,7 +1,7 @@
 // Init parents
 event_inherited();
 
-G_YSTART = 75;
+G_YSTART += 75;
 
 boardA[global.boardHeight,0]=3;
 boardA[global.boardHeight,1]=1;

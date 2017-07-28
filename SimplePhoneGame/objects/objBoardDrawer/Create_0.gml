@@ -1,9 +1,9 @@
 /// @description This object draw everythings from the board
 
 // Graphic constants
-G_XSTART = 25;
-G_YSTART = 25;
-G_BLOCK_SIZE = 80;
+G_XSTART = 100;
+G_YSTART = 100;
+G_BLOCK_SIZE = 64;
 G_DISTANCE_BETWEEN_BOARDS = 150;
 
 // State

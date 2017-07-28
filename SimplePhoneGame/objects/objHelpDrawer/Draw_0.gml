@@ -9,4 +9,4 @@ draw_set_font(fontUITextSmall);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_black);
-draw_text(25,10,"Line up the numbers, e.g. 16+26=42");
+draw_text(25,75,"Line up the numbers, e.g. 16+26=42");

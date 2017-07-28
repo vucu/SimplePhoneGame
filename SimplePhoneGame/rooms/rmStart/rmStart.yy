@@ -21,7 +21,7 @@
             "mvc": "1.0",
             "depth": 0,
             "grid_x": 48,
-            "grid_y": 48,
+            "grid_y": 20,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -71,7 +71,7 @@
                     "m_serialiseFrozen": false,
                     "name": "inst_62A22650",
                     "x": 48,
-                    "y": 576,
+                    "y": 540,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -95,7 +95,7 @@
                     "m_serialiseFrozen": false,
                     "name": "inst_4D7C2419",
                     "x": 432,
-                    "y": 576,
+                    "y": 540,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
