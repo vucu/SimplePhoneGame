@@ -1,0 +1,7 @@
+Design Notes
+====
+Drawer objects:
+Used to draw something on the screen.
+Having internal states.
+All drawers object must make no reference to any other type of object,
+so they can be safely used in any room
