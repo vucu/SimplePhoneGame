@@ -107,7 +107,7 @@ for (r=0;r<boardHeight;r++) {
 				0,xx,yy,
 				G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
 			draw_text_color(xx+G_BLOCK_SIZE/2,
-				yy+G_BLOCK_SIZE/2,
+				yy+G_BLOCK_SIZE/2+1,
 				string(boardA[r,i]),
 				textColor,textColor,
 				textColor,textColor,1);
@@ -117,7 +117,7 @@ for (r=0;r<boardHeight;r++) {
 				0,xx+totalDistance,yy,
 				G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
 			draw_text_color(xx+G_BLOCK_SIZE/2+totalDistance,
-				yy+G_BLOCK_SIZE/2,
+				yy+G_BLOCK_SIZE/2+1,
 				string(boardB[r,i]),
 				textColor,textColor,
 				textColor,textColor,1);
@@ -127,7 +127,7 @@ for (r=0;r<boardHeight;r++) {
 				0,xx+2*totalDistance,yy,
 				G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
 			draw_text_color(xx+G_BLOCK_SIZE/2+2*totalDistance,
-				yy+G_BLOCK_SIZE/2,
+				yy+G_BLOCK_SIZE/2+1,
 				string(boardC[r,i]),
 				textColor,textColor,
 				textColor,textColor,1);
@@ -152,7 +152,7 @@ if (isDrawingCurrentBlock) {
 		draw_sprite_stretched_ext(sprSquare,
 			0,xx,yy,
 			G_BLOCK_SIZE,G_BLOCK_SIZE,squareColor,1);
-		draw_text(xx+G_BLOCK_SIZE/2, yy+G_BLOCK_SIZE/2,	string(currentBlockNumber));
+		draw_text(xx+G_BLOCK_SIZE/2, yy+G_BLOCK_SIZE/2+1,string(currentBlockNumber));
 		xx+=G_BLOCK_SIZE;
 	}
 }

@@ -39,7 +39,7 @@ if (position_meeting(mouse_x, mouse_y, objUIDropButton)) {
 	}
 	
 	// Create help display
-	instance_create_depth(0,0,-1000,objHelpDrawer);
+	instance_create_depth(0,0,depth-1000,objHelpDrawer);
 	isHelpDisplaying = true;
 }
 else {

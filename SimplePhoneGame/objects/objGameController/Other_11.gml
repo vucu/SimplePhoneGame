@@ -6,5 +6,5 @@ isLost = false;
 isHelpDisplaying = false;
 
 // Create board controller
-instance_create_depth(x,y,0,objBoardController);
+instance_create_depth(x,y,depth+100,objBoardController);
 

@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "07aabe0b-11e9-4e12-a56f-36c73290fe34",
+            "Value": {
+                "id": "39e7ab28-4c93-4957-a736-3dbc6bc56c2b",
+                "resourcePath": "objects\\objGameRoomUIDrawer\\objGameRoomUIDrawer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0e715d67-3bd7-4cf0-be0c-f02edce9c077",
             "Value": {
                 "id": "de77679c-0585-41c3-8171-0886ec6b265e",
@@ -164,14 +172,6 @@
                 "id": "fff60635-9f75-4dac-9e5b-73e43564bcc5",
                 "resourcePath": "fonts\\fontNumber\\fontNumber.yy",
                 "resourceType": "GMFont"
-            }
-        },
-        {
-            "Key": "51b8a8da-a419-413e-97bc-f0a3519b0c49",
-            "Value": {
-                "id": "f394e220-3413-4fe6-b128-7677edc8dde8",
-                "resourcePath": "objects\\objScoreDrawer\\objScoreDrawer.yy",
-                "resourceType": "GMObject"
             }
         },
         {

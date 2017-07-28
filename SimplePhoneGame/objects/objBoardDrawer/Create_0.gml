@@ -4,7 +4,7 @@
 G_XSTART = 25;
 G_YSTART = 25;
 G_BLOCK_SIZE = 80;
-G_DISTANCE_BETWEEN_BOARDS = 250;
+G_DISTANCE_BETWEEN_BOARDS = 150;
 
 // State
 boardHeight = global.boardHeight;
