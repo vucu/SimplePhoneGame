@@ -1,3 +1,6 @@
+var tapX = ds_map_find_value(event_data,"posX");
+var tapY = ds_map_find_value(event_data,"posY");
+
 if (isLost) {
 	event_perform(ev_other,ev_user1);
 	return;
@@ -21,11 +24,11 @@ if (isHelpDisplaying) {
 	return;
 }
 
-if (position_meeting(mouse_x, mouse_y, objUIDropButton)) {
+if (position_meeting(tapX, tapY, objUIDropButton)) {
 	with (objBoardController) {
 		event_perform(ev_other,ev_user1);
 	}
-} else if (position_meeting(mouse_x, mouse_y, objUIHelpButton)) {
+} else if (position_meeting(tapX, tapY, objUIHelpButton)) {
 	// Pause
 	with (objBoardController) {
 		afterPauseTimeBetweenFallRemain = alarm[0];
