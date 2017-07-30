@@ -1,5 +1,2 @@
-/// @description Init
-randomize();
-globalVar();
-
 isHelpDisplaying = false;
+isGoingToNextRoom = false;
