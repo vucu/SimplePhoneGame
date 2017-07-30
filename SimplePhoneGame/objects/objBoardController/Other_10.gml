@@ -24,4 +24,4 @@ event_perform(ev_other,ev_user2);
 
 // Note: Prohibit tap for a small amount of time, to reduce sensitivity
 canTap = false;
-alarm[1] = 6;
+alarm[1] = 3;

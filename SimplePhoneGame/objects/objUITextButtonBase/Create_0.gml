@@ -1,5 +1,5 @@
 text = "";
 font = fontButtonTextMedium;
 
-isHighlighed = false;
+isHighlighted = false;
 isPause = false;

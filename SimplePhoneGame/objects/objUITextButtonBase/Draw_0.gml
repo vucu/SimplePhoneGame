@@ -1,4 +1,4 @@
-if (isHighlighed) {
+if (isHighlighted) {
 	draw_set_alpha(0.2);
 	draw_sprite(sprite_index,0,x,y);
 	draw_set_alpha(1);
