@@ -1,2 +1,3 @@
 event_inherited();
-text="NGame";
+font = fontButtonTextSmall;
+text="New Game";

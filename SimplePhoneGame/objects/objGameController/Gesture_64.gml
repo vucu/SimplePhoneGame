@@ -46,7 +46,7 @@ if (position_meeting(tapX, tapY, objUIDropButton)) {
 	isHelpDisplaying = true;
 }
 else if (position_meeting(tapX, tapY, objUIQuitButton)) {
-	event_perform(ev_other, ev_user1);
+	event_perform(ev_other, ev_user0);
 }
 else {
 	with (objBoardController) {
