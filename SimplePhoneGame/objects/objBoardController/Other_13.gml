@@ -5,7 +5,7 @@ var nextBoardNumber = (currentBoardNumber+1) % 3;
 // Note: True beginners are easily frustrated by this rule.
 // Needs to be up to 100, so they're used to it
 
-if (score==0) 
+if (score==0 && global.newPlayerBlock) 
 {
 	currentBlockX = 0;
 	currentBlockY = 0;
@@ -15,6 +15,7 @@ if (score==0)
 } 
 else 
 {
+	global.newPlayerBlock = false;
 	if (score<25) 
 	{
 		// Learn about mechanics

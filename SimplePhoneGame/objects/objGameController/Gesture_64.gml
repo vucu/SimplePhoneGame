@@ -45,6 +45,9 @@ if (position_meeting(tapX, tapY, objUIDropButton)) {
 	instance_create_depth(0,0,depth-1000,objHelpDrawer);
 	isHelpDisplaying = true;
 }
+else if (position_meeting(tapX, tapY, objUIQuitButton)) {
+	event_perform(ev_other, ev_user1);
+}
 else {
 	with (objBoardController) {
 		event_perform(ev_other,ev_user0);

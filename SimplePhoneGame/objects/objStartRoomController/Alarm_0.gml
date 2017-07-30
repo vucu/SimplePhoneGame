@@ -1,2 +1,7 @@
-/// @description Go to game room
-room_goto(rmGame);
+/// @description Go to next room
+if (global.newPlayerStartGame) {
+	global.newPlayerStartGame = false;
+	room_goto(rmHelp);
+} else {
+	room_goto(rmGame);
+}
